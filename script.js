@@ -182,22 +182,14 @@ function celebrate() {
     // Set celebration messages
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
-    document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     
-    // Create heart explosion effect
-    createHeartExplosion();
-}
-
-// Create heart explosion animation
-function createHeartExplosion() {
-    for (let i = 0; i < 50; i++) {
-        const heart = document.createElement('div');
-        const randomHeart = config.floatingEmojis.hearts[Math.floor(Math.random() * config.floatingEmojis.hearts.length)];
-        heart.innerHTML = randomHeart;
-        heart.className = 'heart';
-        document.querySelector('.floating-elements').appendChild(heart);
-        setRandomPosition(heart);
-    }
+    // Show the new button
+    const newButton = document.createElement('a');
+    newButton.href = "https://youtu.be/rd4-JyFnmQk?si=x0iPRh5b2t1uWaOg";
+    newButton.target = "_blank";
+    newButton.className = "cute-btn";
+    newButton.textContent = "Seni çok seviyorum";
+    celebration.appendChild(newButton);
 }
 
 // Music Player Setup
