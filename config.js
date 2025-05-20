@@ -42,9 +42,9 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "VAYYY Güzelim, beni bu kadar mı seviyorsun?? 🥰💝",
-        high: "Sonsuzluğa ve ötesine, güzelim! 💝",
-        normal: "Ve ötesine, güzelim! 🥰"
+        extreme: "BEN SENİ BUNDAN DA ÇOK SEVİYORUM 🥰💝",
+        high: "Hep yanımda ol sevgilim 💝",
+        normal: "Seni çuk ama çuk seviyorum 🥰"
     },
 
     // Messages that appear after they say "Yes!"
